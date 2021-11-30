@@ -1,0 +1,51 @@
+a:link, a:visited, a:active, a:hover{
+    text-decoration:none;
+    color: black
+  }
+
+nav > h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: 5px double black;
+    background-color: rgb(15, 238, 238);
+    text-shadow: 3px 3px #2b9ffd;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+header > h2{
+    background-color: cyan;
+    text-align: center;
+    border: 5px double black;
+    background-color: rgb(15, 238, 238);
+    text-shadow: 3px 3px #2b9ffd;
+}
+fieldset{
+    width: 90%;
+    margin: auto;
+   background-color: burlywood;
+   font-family:Arial, Helvetica, sans-serif
+}
+body{
+    background-image:linear-gradient(to right, rgb(0, 0, 0) , rgb(121, 230, 230));
+}
+legend{
+    background-color: transparent;   
+    text-align: center;
+    font-weight: 800;
+}
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    color: white;
+    padding: 1% 1%;
+    float: left;
+    font-family: 7px;
+}
+@media screen and (max-width:700px){
+    fieldset{
+        margin:auto;
+        width:80%;
+    }
+}

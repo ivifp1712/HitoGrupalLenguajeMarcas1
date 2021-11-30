@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario para empresas</title>
+    <link rel="stylesheet" href="styles/style_formulario.css">
+</head>
+<body>
+    <main>
+        <nav>
+            <h1><a href="index.html">JobSearching</a></h1>
+        </nav>
+        <header>
+            <h2>Formulario</h2>
+        </header>
+        <form action="procesa.php" method="get">
+        <fieldset>
+
+            <legend><br>Datos personales:</legend>  
+            <p>
+                <label for="Nombre">Nombre:</label>
+                <input type="text" name="Nombre" required>
+            </p>
+            <p>
+                <label for="Apellidos">Apellidos:</label>
+                <input type="text" name="Apellidos">
+            </p>
+            <p>
+                <label for="direcciónEmail">dirección de Email:</label>
+                <input type="email" name="email" required>
+            </p>
+            <p>
+                <label for="date">Fecha de Nacimiento:</label>
+                <input type="date" name="nacimiento" required>  
+            </p>
+            <p>
+                <label for="estado">Estado civil:</label>
+                <input type="radio" name="estado" value="S">Soltero/a
+                <input type="radio" name="estado" value="C">Casado/a
+                <input type="radio" name="estado" value="D">Divorciado/a
+                <input type="radio" name="estado" value="V">Viudo/a
+            </p>
+        </fieldset>
+        <form action="procesa.php" method="get">
+            <fieldset>
+                
+                <legend><br>Experiencia profesional (último trabajo):</legend>  
+                <p>
+                    <label for="Nombre_empresa">Nombre de la empresa:</label>
+                    <input type="text" name="Nombre_empresa" required>
+                </p>
+                <p>
+                    <label for="Nombre_empresa">Puesto ocupado:</label>
+                    <input type="text" name="Nombre_empresa" required>
+                </p>
+                <p>
+                    <label for="Tiempo_trabajado">¿Cuánto tiempo trabajaste?:</label>
+                    <input type="radio" name="tiempo_trabajado" value="A"> menos de 3 meses
+                    <input type="radio" name="tiempo_trabajado" value="B"> entre 3 y 6 meses
+                    <input type="radio" name="tiempo_trabajado" value="C"> entre 6 meses y 2 años
+                    <input type="radio" name="tiempo_trabajado" value="D"> más de 2 años
+                </p>
+            </fieldset>
+            <form action="procesa.php" method="get">
+            <fieldset>
+                <legend><br>Trabajo buscado:</legend>  
+                <p>
+                    <label for="Nombre_empresa">¿Qué trabajo buscas?:</label>
+                    <input type="text" name="Nombre_empresa" required>
+                </p>
+                <p>
+                    <label for="Tiempo_trabajado">¿Qué tipo de contrato quieres?:</label>
+                    <input type="radio" name="tiempo_trabajado" value="P"> Prácticas
+                    <input type="radio" name="tiempo_trabajado" value="I"> Indefinido
+                    <input type="radio" name="tiempo_trabajado" value="T"> Temporal
+                </p>
+                <p>
+                    <label>Que cualidades puedes aportar a la empresa:</label>
+                    <textarea rows="5" cols="40"></textarea>
+
+                </p>
+            </fieldset>
+            <fieldset>
+            <legend><br>Finalización:</legend>
+            <p><input type="submit" value="Enviar Datos"></p>
+            <p><input type="reset" value="Limpiar formulario"></p> 
+            </fieldset>
+        </form>
+        <footer>
+            <p>©JobSearching 2021 - Todos los derechos reservados</p>
+        </footer>  
+    </main>
+    
+</body>
+</html>

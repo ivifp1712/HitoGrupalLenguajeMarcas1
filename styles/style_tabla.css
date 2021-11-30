@@ -1,0 +1,61 @@
+body{
+    background-image:linear-gradient(to right, rgb(0, 0, 0) , rgb(121, 230, 230));
+    margin: 20px;
+}
+
+a:link, a:visited, a:active, a:hover{
+    text-decoration:none;
+    color: black
+  }
+
+nav > h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: 5px double black;
+    background-color: rgb(15, 238, 238);
+    text-shadow: 3px 3px #2b9ffd;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+header{
+    font-family: "Verdana";
+    text-align: left;
+    border: 5px double black;
+    background-color: rgb(90, 224, 224);
+    text-shadow: 3px 3px #2b9ffd;
+    font-weight: bold;
+    font-size: 20px;
+    width: 50%;
+}
+
+tr, td, th  {
+    font-family: "Helvetica";
+    text-align: center;
+    border: 5px double black;
+    background-color:rgb(235, 177, 177);
+    
+}
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    color: white;
+    padding: 1% 1%;
+    float: left;
+    font-family: 7px;
+}
+
+@media screen and (max-width: 800px){
+    body{
+        margin:auto;
+        width:80%;
+    }
+    table {
+        margin:auto;
+        width:70%;
+    }
+    header{
+        width: auto;
+    }
+}
